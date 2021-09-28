@@ -1,0 +1,114 @@
+:root{
+    --primary-coralRed: rgb(255,121,121);
+    --primary-lightGreen: rgb(56, 204, 139);
+    --primary-violet:rgb(94,84,164);
+    --primary-darkGray:rgb(61,59,72);
+    --neutral-white: rgb(255,255,255);
+   }
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*TO DO:check which element is not included in html and remove it*/
+html,body,main,div,section,h1,p,span,img,form,input,button,strong,small{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+
+html, body, .container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(../assets/bg-intro-desktop.png), var(--primary-coralRed);
+    background-size: cover;
+    color:var(--neutral-white);
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.info__container, 
+.signup__container,
+.signup__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.info__container{
+    text-align: center;
+    max-width: 327px;
+    gap:16px;
+}
+
+.heading{
+    font-size: 28px;
+    line-height: 1.285;
+    font-weight: 700;
+    letter-spacing: -0.29px;
+}
+
+.info__paragraph{
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 500;
+}
+
+.signup__container{
+    max-width: 327px;
+    gap:24px;
+}
+
+.free__info{
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 400;
+    background-color: var(--primary-violet);
+    border-radius: 10px;
+    letter-spacing: 0.27px;
+    height: 88px;
+    text-align: center;
+    padding:18px 66px;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.strong{
+    font-weight: 500;
+    
+}
+
+.signup__form{
+    
+}
+.input{
+padding: 24px;
+border:
+}
+.input__firstName{
+
+}
+
+.input__lastName{
+
+}
+
+.input__email{}
+
+.input__password{}
+
+.submitBtn{}
+
+.terms{
+
+}
+
+.terms__link{}
