@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/favicon-32x32.png" type="image/png">
+    <title>Sign up</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <section class="info__container">
+            <h1 class="heading">
+                Learn to code by watching others
+            </h1>
+            <p class="info__paragraph">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                understanding how developers think is invaluable.
+            </p>
+        </section>
+        <section class="signup__container">
+            <h2 class="screen__readers__only">Sign up container</h2>
+            <p class="free__info"><strong class="strong">Try it free 7 days</strong> then $20/mo. thereafter</p>
+
+            <form action="#" class="signup__form js-form" novalidate>
+                <div class="input__container">
+                    <input type="text" class="input js-input" placeholder="First Name" name="firstname">
+            
+                    <small role="alert" class="empty" aria-hidden="true">
+                        First Name cannot be empty
+                    </small>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input type="text" class="input js-input" placeholder="Last Name" name="lastname">
+                    
+                        <small role="alert" class="empty" aria-hidden="true">
+                            Last Name cannot be empty
+                    </small>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input type="email" class="input js-input" placeholder="Email Address" name="email">
+                    
+                        <small role="alert" class="error__message" aria-hidden="true">
+                            Looks like this is not an email
+                    </small>
+                    <small role="alert" class="empty" aria-hidden="true">
+                        Email Address cannot be empty
+                    </small>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input type="password" class="input js-input" placeholder="Password" name="password">
+                    
+                        <small role="alert" class="empty" aria-hidden="true">
+                            Password cannot be empty
+                    </small>
+                    <small role="alert" class="error__message" aria-hidden="true">
+                        Password must have at least 6 characters
+                    </small>
+                    </div>
+                    <button type="submit" class="submitBtn">
+                    CLAIM YOUR FREE TRIAL
+                </button>
+                <small class="terms">
+                    By clicking the button, you are agreeing to our <a href="" class="terms__link">Terms and
+                        Services</a>
+                </small>
+            </form>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
