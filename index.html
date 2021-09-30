@@ -26,38 +26,58 @@
             </p>
         </section>
         <section class="signup__container">
+            <h2 class="screen__readers__only">Sign up container</h2>
             <p class="free__info"><strong class="strong">Try it free 7 days</strong> then $20/mo. thereafter</p>
 
-            <form action="#" class="signup__form">
-                <input type="text" class="input input__firstName" placeholder="First Name" required>
-                <!-- <small role="alert" class="error__message" aria-hidden="true">
-                    First Name cannot be empty
-                </small> -->
-                <input type="text" class="input input__lastName" placeholder="Last Name" required>
-                <!-- <small role="alert" class="error__message" aria-hidden="true">
-                    Last Name cannot be empty
-                </small> -->
-                <input type="email" class="input input__email" placeholder="Email Address">
-                <!-- <small role="alert" class="error__message" aria-hidden="true">
-                    Looks like this is not an email
-                </small> -->
-                <!-- <small role="alert" class="error__message" aria-hidden="true">
-                    Email Address cannot be empty
-                </small> -->
-                <input type="password" class="input input__password" placeholder="Password">
-                <!-- <small role="alert" class="error__message" aria-hidden="true">
-                    Password cannot be empty
-                </small> -->
-                <button type="submit" class="submitBtn">
+            <form action="#" class="signup__form js-form" novalidate>
+                <div class="input__container">
+                    <input type="text" class="input js-input" placeholder="First Name" name="firstname">
+            
+                    <small role="alert" class="empty" aria-hidden="true">
+                        First Name cannot be empty
+                    </small>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input type="text" class="input js-input" placeholder="Last Name" name="lastname">
+                    
+                        <small role="alert" class="empty" aria-hidden="true">
+                            Last Name cannot be empty
+                    </small>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input type="email" class="input js-input" placeholder="Email Address" name="email">
+                    
+                        <small role="alert" class="error__message" aria-hidden="true">
+                            Looks like this is not an email
+                    </small>
+                    <small role="alert" class="empty" aria-hidden="true">
+                        Email Address cannot be empty
+                    </small>
+                    </div>
+                    
+                    <div class="input__container">
+                        <input type="password" class="input js-input" placeholder="Password" name="password">
+                    
+                        <small role="alert" class="empty" aria-hidden="true">
+                            Password cannot be empty
+                    </small>
+                    <small role="alert" class="error__message" aria-hidden="true">
+                        Password must have at least 6 characters
+                    </small>
+                    </div>
+                    <button type="submit" class="submitBtn">
                     CLAIM YOUR FREE TRIAL
                 </button>
                 <small class="terms">
-                    By clicking the button, you are agreeing to our <a href="#" class="terms__link">Terms and
+                    By clicking the button, you are agreeing to our <a href="" class="terms__link">Terms and
                         Services</a>
                 </small>
             </form>
         </section>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
